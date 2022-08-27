@@ -1,37 +1,145 @@
-body {
-    font-family: 'Overpass', sans-serif;
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #151515;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+hr {
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid #C0C0C0;
+    width: 90%;
+  }
+
 #container {
-    display: flex;
-    justify-content: center;
+    margin: 0px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* header and navigation */
+
+#logo {
+    border-radius: 50%;
+    border: 10px;
+}
+
+header > * {
+    margin: 0 0 20px 0;
 }
 
 header, nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    padding: 0;
+nav {
+    text-transform: uppercase;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav li {
-    background-color: lightgrey;
-    float: left;
-    margin: 0 0.5em;
-    padding: 0.5em;
+    display: inline-block;
+    background: #151515;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
 }
 
-#logo {
-    border-radius: 50%;
+nav a {
+    color: #FFFFFF;
+}
+
+/* footer */
+
+footer {
+    background: red;
+    text-align: center;
+    padding: 20px;
+}
+
+/* main */
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#welcome, .featured {
+    padding: 20px;
+}
+
+#welcome {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+.featured {
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.featured-img {
+
+}
+
+.featured img {
+    width: 100%;
+    height: auto;
+}
+
+/* blog post */
+
+/* hyperlink */
+a {
+    text-decoration: none;
+    color: #151515;
+}
+
+a:hover {
+    color: red;
+}
+
+/* medium */
+@media only screen and (max-width: 768px)
+{
+
+}
+
+/* small */
+
+@media only screen and (max-width: 480px)
+{
+
 }
