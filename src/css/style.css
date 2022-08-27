@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
     color: #151515;
 }
 
@@ -23,11 +24,10 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 p {
-    font-size: 1.2rem;
     margin: 1rem 0;
 }
 
@@ -35,7 +35,7 @@ hr {
     margin: 0 auto;
     border: 0;
     border-top: 1px solid #C0C0C0;
-    width: 90%;
+    width: 80%;
   }
 
 #container {
@@ -82,9 +82,12 @@ nav a {
 /* footer */
 
 footer {
-    background: red;
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
+}
+
+.social {
+    margin: 0 10px;
 }
 
 /* main */
@@ -95,28 +98,21 @@ main {
     flex-flow: row wrap;
 }
 
-#welcome, .featured {
-    padding: 20px;
-}
-
-#welcome {
-    box-sizing: border-box;
-    width: 100%;
+.featured, #welcome, #contact {
     text-align: center;
 }
 
-.featured {
+/* featured content */
+
+#welcome {
+    box-sizing: border-box;
+    padding: 20px 10%;
+}
+
+.featured, #contact {
     box-sizing: border-box;
     width: 30%;
-}
-
-.featured-img {
-
-}
-
-.featured img {
-    width: 100%;
-    height: auto;
+    padding: 20px;
 }
 
 /* blog post */
@@ -125,21 +121,30 @@ main {
 a {
     text-decoration: none;
     color: #151515;
+    font-weight: 800;
 }
 
 a:hover {
-    color: red;
+    color: #00EFEF;
 }
 
-/* medium */
+@media only screen and (max-width: 1024px)
+{
+    .featured {
+        width: 50%;
+        padding: 20px 5%;
+    }
+    
+    #contact {
+        width: 100%;
+        padding: 20px 10%;
+    }
+}
+
 @media only screen and (max-width: 768px)
 {
-
-}
-
-/* small */
-
-@media only screen and (max-width: 480px)
-{
-
+    .featured {
+        width: 100%;
+        padding: 20px 10%;
+    }
 }
