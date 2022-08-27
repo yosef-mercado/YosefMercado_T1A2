@@ -11,10 +11,23 @@ body {
     color: #151515;
 }
 
+
+/* responsive image */
+
+.responsive {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
 /* text */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Libre Baskerville', serif;
+}
+
+h1::first-letter, h2::first-letter, h3::first-letter {
+    color: #00EFEF;
 }
 
 h1 {
@@ -66,7 +79,6 @@ hr {
 
 #logo {
     border-radius: 50%;
-    border: 10px;
 }
 
 header > * {
@@ -90,7 +102,6 @@ nav li {
     background: #151515;
     border-radius: 20px;
     padding: 10px 30px;
-    font-size: 1.2rem;
 }
 
 nav a {
@@ -112,39 +123,56 @@ footer {
 
 main {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-flow: row wrap;
 }
 
-section {
+article, section {
     box-sizing: border-box;
+    width: 100%;
+}
+
+/* text components */
+
+#welcome, .about-text, .blog-preview {
+    width: 100%;
     padding: 20px 10%;
     text-align: center;
 }
 
-/* featured content component */
-
-.featured, #contact {
-    box-sizing: border-box;
+.featured, #contact, .project {
     width: 30%;
     padding: 20px;
+}
+
+/* blog post component */
+
+.blog-preview {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     text-align: left;
 }
 
-/* about */
-
-#about {
-    width: 100%;
+.blog-preview-text {
+    width: 70%;
+    padding-right: 20px;
 }
 
-/* blog post */
+.blog-preview-image {
+    width: 30%;
+}
 
+.blog-preview a:hover {
+    text-decoration: underline;
+    color: #151515;
+}
 
 /* large screen breakpoint */
 
 @media only screen and (max-width: 1024px)
 {
-    .featured {
+    .featured, .project {
         width: 50%;
         padding: 20px 5%;
     }
@@ -154,15 +182,54 @@ section {
         padding: 20px 10%;
         text-align: center;
     }
+
+    .blog-preview-text p {
+        display: none;
+    }
 }
 
 /* medium screen breakpoint */
 
 @media only screen and (max-width: 768px)
 {
-    .featured {
+    .featured, .project {
         width: 100%;
         padding: 20px 10%;
         text-align: center;
+    }
+
+    .blog-preview-text {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .blog-preview-image {
+        display: none;
+    }
+}
+
+/* small screen breakpoint */
+
+@media only screen and (max-width: 480px)
+{
+    body {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        margin: 0.8rem 0;
     }
 }
