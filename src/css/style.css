@@ -184,7 +184,7 @@ footer {
         text-align: center;
     }
 
-    .blog-preview-text p {
+    .blog-preview-text p:nth-of-type(odd) {
         display: none;
     }
 }
