@@ -11,7 +11,6 @@ body {
     color: #151515;
 }
 
-
 /* responsive image */
 
 .responsive {
@@ -75,11 +74,20 @@ hr {
     max-width: 1200px;
 }
 
-/* header and navigation */
+/* semantic containers */
 
-#logo {
-    border-radius: 50%;
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
 }
+
+article, section {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* header and navigation */
 
 header > * {
     margin: 0 0 20px 0;
@@ -108,6 +116,10 @@ nav a {
     color: #FFFFFF;
 }
 
+#logo {
+    border-radius: 50%;
+}
+
 /* footer */
 
 footer {
@@ -119,33 +131,20 @@ footer {
     margin: 0 10px;
 }
 
-/* misc semantic */
-
-main {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-}
-
-article, section {
-    box-sizing: border-box;
-    width: 100%;
-}
-
 /* text components */
 
-#welcome, .about-text, .blog-preview {
+.about-text, .blog-preview, #welcome {
     width: 100%;
     padding: 20px 10%;
     text-align: center;
 }
 
-.featured, #contact, .project {
+.featured, .project, #contact {
     width: 30%;
     padding: 20px;
 }
 
-/* blog post component */
+/* blog preview component */
 
 .blog-preview {
     display: flex;
@@ -154,19 +153,21 @@ article, section {
     text-align: left;
 }
 
-.blog-preview-text {
-    width: 70%;
-    padding-right: 20px;
+.blog-preview a:hover {
+    text-decoration: underline;
+    color: #151515;
 }
 
 .blog-preview-image {
     width: 30%;
 }
 
-.blog-preview a:hover {
-    text-decoration: underline;
-    color: #151515;
+.blog-preview-text {
+    width: 70%;
+    padding-right: 20px;
 }
+
+/* blog component */
 
 /* large screen breakpoint */
 
@@ -198,14 +199,14 @@ article, section {
         text-align: center;
     }
 
+    .blog-preview-image {
+        display: none;
+    }
+
     .blog-preview-text {
         width: 100%;
         padding-right: 0;
         text-align: center;
-    }
-
-    .blog-preview-image {
-        display: none;
     }
 }
 
