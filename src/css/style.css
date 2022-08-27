@@ -11,6 +11,8 @@ body {
     color: #151515;
 }
 
+/* text */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Libre Baskerville', serif;
 }
@@ -31,12 +33,28 @@ p {
     margin: 1rem 0;
 }
 
+/* hyperlink */
+
+a {
+    text-decoration: none;
+    color: #151515;
+    font-weight: 800;
+}
+
+a:hover {
+    color: #00EFEF;
+}
+
+/* horizontal ruler */
+
 hr {
     margin: 0 auto;
     border: 0;
     border-top: 1px solid #C0C0C0;
     width: 80%;
   }
+
+/* site container */
 
 #container {
     margin: 0px auto;
@@ -90,7 +108,7 @@ footer {
     margin: 0 10px;
 }
 
-/* main */
+/* misc semantic */
 
 main {
     display: flex;
@@ -98,35 +116,31 @@ main {
     flex-flow: row wrap;
 }
 
-.featured, #welcome, #contact {
+section {
+    box-sizing: border-box;
+    padding: 20px 10%;
     text-align: center;
 }
 
-/* featured content */
-
-#welcome {
-    box-sizing: border-box;
-    padding: 20px 10%;
-}
+/* featured content component */
 
 .featured, #contact {
     box-sizing: border-box;
     width: 30%;
     padding: 20px;
+    text-align: left;
+}
+
+/* about */
+
+#about {
+    width: 100%;
 }
 
 /* blog post */
 
-/* hyperlink */
-a {
-    text-decoration: none;
-    color: #151515;
-    font-weight: 800;
-}
 
-a:hover {
-    color: #00EFEF;
-}
+/* large screen breakpoint */
 
 @media only screen and (max-width: 1024px)
 {
@@ -138,13 +152,17 @@ a:hover {
     #contact {
         width: 100%;
         padding: 20px 10%;
+        text-align: center;
     }
 }
+
+/* medium screen breakpoint */
 
 @media only screen and (max-width: 768px)
 {
     .featured {
         width: 100%;
         padding: 20px 10%;
+        text-align: center;
     }
 }
