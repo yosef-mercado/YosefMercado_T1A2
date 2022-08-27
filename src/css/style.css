@@ -233,4 +233,8 @@ footer {
     p {
         margin: 0.8rem 0;
     }
+
+    nav li {
+        padding: 10px 20px;
+    }
 }
