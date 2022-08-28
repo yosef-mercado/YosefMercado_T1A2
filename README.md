@@ -26,7 +26,7 @@ There are four main pages to navigate:
 
 ## Sitemap
 
-![sitemap](/docs/sitemap.png)
+![sitemap](./docs/sitemap.png)
 
 ## Screenshots
 
@@ -34,23 +34,23 @@ From left to right: 480px width, 768px width, 1024px width, 1200px+ width.
 
 ### Home
 
-![home breakpoints](/docs/home-breakpoints.png)
+![home breakpoints](./docs/home-breakpoints.png)
 
 ### About
 
-![about breakpoints](/docs/about-breakpoints.png)
+![about breakpoints](./docs/about-breakpoints.png)
 
 ### Projects
 
-![projects breakpoints](/docs/projects-breakpoints.png)
+![projects breakpoints](./docs/projects-breakpoints.png)
 
 ### Blog
 
-![blog breakpoints](/docs/blog-breakpoints.png)
+![blog breakpoints](./docs/blog-breakpoints.png)
 
 ### Blog Post
 
-![blog post breakpoints](/docs/blog-post-breakpoints.png)
+![blog post breakpoints](./docs/blog-post-breakpoints.png)
 
 ## Target Audience
 
