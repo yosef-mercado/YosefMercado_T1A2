@@ -108,7 +108,7 @@ nav a {
     color: #FFFFFF;
 }
 
-#nav-header > * {
+#nav-header > *, #logo {
     margin: 0 0 20px 0;
 }
 
