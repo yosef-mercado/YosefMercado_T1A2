@@ -89,14 +89,6 @@ article, section {
 
 /* header and navigation */
 
-header > * {
-    margin: 0 0 20px 0;
-}
-
-header, nav {
-    text-align: center;
-}
-
 nav {
     text-transform: uppercase;
 }
@@ -116,6 +108,14 @@ nav a {
     color: #FFFFFF;
 }
 
+#nav-header > * {
+    margin: 0 0 20px 0;
+}
+
+#nav-header, nav {
+    text-align: center;
+}
+
 #logo {
     border-radius: 50%;
 }
@@ -131,9 +131,9 @@ footer {
     margin: 0 10px;
 }
 
-/* text components */
+/* global text containers */
 
-.about-text, .blog-preview, #welcome {
+.about-text, #blog, .blog-preview, #welcome {
     width: 100%;
     padding: 20px 10%;
     text-align: center;
@@ -168,6 +168,9 @@ footer {
 }
 
 /* blog component */
+#blog-body {
+    text-align: left;
+} 
 
 /* large screen breakpoint */
 
