@@ -4,7 +4,7 @@
 
 [GitHub Repository](https://github.com/yosef-mercado/YosefMercado_T1A2)
 
-Presentation
+[Presentation](https://youtu.be/og463LJ4UAg)
 
 ## Purpose
 
@@ -12,7 +12,7 @@ This website acts as a demonstration of my skills and knowledge as a web develop
 
 ## Functionality and Features
 
-This website utilises semantic HTML to cater for accesibility and add meaning. It also features a responsive and minimalistic layout with four screen width breakpoints: 480px, 768px, 1024px, and 1200px.
+This website utilises semantic HTML to cater for accesibility and add meaning. It also features a responsive and minimalistic layout with four breakpoints: 480px, 768px, 1024px, and 1200px+.
 
 There are four main pages to navigate:
 
